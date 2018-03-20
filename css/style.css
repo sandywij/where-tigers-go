@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #fcffc5;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  font-family: "Josefin Slab", serif;
+  text-align: center;
+}
+
+header img {
+  display: inline-block;
+  height: 75px;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 3em;
+}
+
+.story {
+  height: 55%;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 50%;
+  z-index: 50;
+  font-size: 18px;
+}
+
+.story:last-child {
+  margin-bottom: 50px;
+}
+
+#container {
+  position: relative;
+  z-index: 100;
+  height: 100vh;
+  overflow: scroll;
+}
+
+#left {
+  position: absolute;
+  right: 20px;
+  width: 50%;
+}
+
+#maps {
+  max-height: 80vh;
+}
+.thailand {
+  fill: #898952;
+}
+
+.thailand,
+.unactive,
+.active {
+  stroke: #000;
+}
+
+.thailand,
+.roads,
+.unactive,
+.active {
+  stroke-linecap: square;
+  stroke-linejoin: bevel;
+  stroke-width: 0.25px;
+}
+
+.roads {
+  fill: none;
+  stroke: #fff;
+}
+
+.unactive {
+  fill: #968d77;
+}
+
+.active {
+  fill: #f81;
+}
+
+.unselected {
+  opacity: 0.5;
+}
